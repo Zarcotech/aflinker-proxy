@@ -7,7 +7,6 @@ canvas.height = window.innerHeight;
 const stars = [];
 const numberOfStars = 100;
 
-// Create stars
 for (let i = 0; i < numberOfStars; i++) {
     stars.push({
         x: Math.random() * canvas.width,
@@ -20,7 +19,7 @@ for (let i = 0; i < numberOfStars; i++) {
 
 function drawStars() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#ffffff'; // Star color
+    ctx.fillStyle = '#ffffff';
 
     stars.forEach(star => {
         ctx.beginPath();
@@ -28,10 +27,9 @@ function drawStars() {
         ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
         ctx.fill();
 
-        // Update star's alpha for twinkling effect
         star.alpha += star.alphaChange;
         if (star.alpha > 1 || star.alpha < 0) {
-            star.alphaChange = -star.alphaChange; // Change direction
+            star.alphaChange = -star.alphaChange;
         }
     });
 }
@@ -42,3 +40,16 @@ function animate() {
 }
 
 animate();
+
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+dropdownBtn.addEventListener('click', () => {
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+window.addEventListener('click', (event) => {
+    if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+        dropdownContent.style.display = 'none';
+    }
+});
