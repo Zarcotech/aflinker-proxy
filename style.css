@@ -2,24 +2,38 @@
 
 .container {
     font-family: 'Rubik', sans-serif;
+    border-radius: 50%;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+canvas {
+    display: block;
 }
 
 .bar {
     position: absolute;
     top: 50%;
-    left: 47%;
+    left: 17%;
 }
 
-.bar {
-    position: absolute;
-    top: 50%;
-    left: 47%;
-}
-
-.credits {
-    top: -50%;
+input {
+    width: 500%;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 .search-text {
-    
+    top: 40%;
+    position: absolute;
+    justify-content: center;
+    left: 46.8%;
+    color: white;
 }
+
