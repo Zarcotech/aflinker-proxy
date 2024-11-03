@@ -46,3 +46,25 @@ input {
     width: 100%;
     text-align: center;
 }
+
+.tabs {
+    bottom: 83%;
+    position: absolute;
+    display: flex;
+    text-align: center;
+}
+
+.tab-apps {
+    background: grey;
+    width: 100%;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.tab-games {
+    background: grey;
+    width: 100%;
+    height: 50px;
+    border-radius: 10%;
+    margin-left: 20px;
+}
