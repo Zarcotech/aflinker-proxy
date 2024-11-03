@@ -37,3 +37,12 @@ input {
     color: white;
 }
 
+.footer {
+    color: white;
+    bottom: -1%;
+    position: absolute;
+    height: 100px;
+    background: grey;
+    width: 100%;
+    text-align: center;
+}
