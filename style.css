@@ -18,7 +18,7 @@ canvas {
 .bar {
     position: absolute;
     top: 50%;
-    left: 17%;
+    margin-left: 17%;
 }
 
 input {
@@ -33,7 +33,7 @@ input {
     top: 40%;
     position: absolute;
     justify-content: center;
-    left: 46.8%;
+    margin-left: 47%;
     color: white;
 }
 
@@ -52,7 +52,7 @@ input {
     position: absolute;
     display: flex;
     text-align: center;
-    left: 89%;
+    margin-left: 85%;
 }
 
 .tab-apps {
