@@ -48,23 +48,32 @@ input {
 }
 
 .tabs {
-    bottom: 83%;
+    bottom: 92%;
     position: absolute;
     display: flex;
     text-align: center;
+    left: 89%;
 }
 
 .tab-apps {
     background: grey;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 10%;
 }
 
 .tab-games {
     background: grey;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 10%;
     margin-left: 20px;
+}
+
+.tab-apps:hover {
+    background-color: rgb(54, 52, 52);
+}
+
+.tab-games:hover {
+    background-color: rgb(54, 52, 52);
 }
