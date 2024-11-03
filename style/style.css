@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@400..900&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.container {
+    font-family: 'Rubik', sans-serif;
+}
+
+.bar {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+}
+
+.bar {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+}
+
+.credits {
+    top: 50%;
+}
